@@ -72,7 +72,7 @@ public class Main {
         ///////////////////////////////////////////////////////////////////////////////////
 
         Automovil aut1 = new Automovil();
-           // aut1.addCliente(cli1);
+            aut1.addCliente(cli1);
             aut1.setId(1);
             aut1.setModelo(mod1);
             aut1.addModelo(aut1);
@@ -81,14 +81,14 @@ public class Main {
             aut1.precioTotal();
 
         Automovil aut2 = new Automovil();
-           // aut2.addCliente(cli2);
+            aut2.addCliente(cli2);
             aut1.setId(2);
             aut2.setModelo(mod2);
             aut2.addModelo(aut2);
             aut2.precioTotal();
 
         Automovil aut3 = new Automovil();
-          //  aut3.addCliente(cli3);
+            aut3.addCliente(cli3);
             aut1.setId(3);
             aut3.setModelo(mod3);
             aut3.addModelo(aut3);
