@@ -1,10 +1,12 @@
-package FabricaAutomoviles;
+package FabricaAutomoviles.Model;
 
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
 public class Automovil {
+    private int id;
+    private String nombre;
     private Modelo modelo;
     private Set<Cliente> cliente;
     private Set<Automovil> automovil;
@@ -111,6 +113,19 @@ public class Automovil {
     }//Cierra PrecioTotal
 
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 }//Cierra Automovil

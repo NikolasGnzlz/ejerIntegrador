@@ -1,4 +1,4 @@
-package FabricaAutomoviles;
+package FabricaAutomoviles.Model;
 /*
 * Una fábrica de automóviles produce uno de sus modelos en tres variantes, llamadas sedán, coupé y familiar.
 * Cada una tiene un precio de venta básico sin opcionales. A su vez, a cada variante se le pueden agregar opciones
@@ -32,12 +32,13 @@ Asumiendo los siguientes costos:
 
 
 public class Cliente {
+    private  int idCliente;
     private String nombre;
     private String apellido;
     private String cuit;
 
-    public Cliente(String nombre, String apellido,String cuit ){
-
+    public Cliente(int idCliente,String nombre, String apellido,String cuit ){
+        this.setIdCliente(idCliente);
         this.setNombre(nombre);
         this.setApellido(apellido);
         this.setCuit(cuit);
@@ -67,5 +68,13 @@ public class Cliente {
 
     public void setCuit(String cuit) {
         this.cuit = cuit;
+    }
+
+    public int getIdCliente() {
+        return idCliente;
+    }
+
+    public void setIdCliente(int idCliente) {
+        this.idCliente = idCliente;
     }
 }

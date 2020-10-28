@@ -1,4 +1,4 @@
-package FabricaAutomoviles;
+package FabricaAutomoviles.Model;
 
 public class Opciones {
     private int idOpcion;

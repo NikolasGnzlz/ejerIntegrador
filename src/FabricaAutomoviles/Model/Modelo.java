@@ -1,13 +1,11 @@
-package FabricaAutomoviles;
+package FabricaAutomoviles.Model;
 
 public class Modelo {
+    private int id;
     private String nombre;
     private int precio;
 
-    public Modelo(String nombre, int precio){
-        this.nombre = nombre;
-        this.precio = precio;
-    }
+
 
 
     public String getNombre() {
@@ -26,9 +24,13 @@ public class Modelo {
         this.precio = precio;
     }
 
+    public int getId() {
+        return id;
+    }
 
-
-
+    public void setId(int id) {
+        this.id = id;
+    }
 }//Cierra Modelo
 
 
